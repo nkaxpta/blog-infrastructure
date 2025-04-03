@@ -16,7 +16,7 @@ resource "aws_codebuild_project" "og_image_create" {
 
   source {
     type            = "GITHUB"
-    location        = "https://github.com/nkaxpta/Create-OpenGraphImage.git"
+    location        = var.og_source_url
     git_clone_depth = 1
   }
 
@@ -96,7 +96,7 @@ resource "aws_codebuild_project" "blog_create" {
 
   source {
     type            = "GITHUB"
-    location        = "https://github.com/nkaxpta/BlogForNext.js.git"
+    location        = var.blog_source_url
     git_clone_depth = 1
   }
 

@@ -56,3 +56,13 @@ variable "og_iamge_dir_url" {
   type    = string
   default = "https://example.com"
 }
+
+variable "blog_source_url" {
+  type    = string
+  default = "https://github.com/nkaxpta/BlogForNext.js.git"
+}
+
+variable "og_source_url" {
+  type    = string
+  default = "https://github.com/nkaxpta/Create-OpenGraphImage.git"
+}

@@ -1,6 +1,7 @@
 # Terraform
 
 このリポジトリは下記ブログのインフラ構成を、TerraformでIaC化したものです。
+
 https://mathenglog.net
 
 ## Architecture on AWS
@@ -53,6 +54,15 @@ terraform/
 ### variables.tfについて
 
 variables.tf内にて定義されているlocalsやvariables（account_id, region以外）は各自の置き換えて利用してください。
+
+- var.blog_source_url
+  - 本ブログでは下記を指定しています。
+  - https://github.com/nkaxpta/BlogForNext.js.git
+  - ブログのフロント部分を作成しています。
+- var.og_source_url
+  - 上記ソースを基にする場合には下記を指定しておく必要があります。
+  - https://github.com/nkaxpta/Create-OpenGraphImage.git
+  - ここでブログ記事のサムネイルを自動作成しています。
 
 ### コマンド
 
